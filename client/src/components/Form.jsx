@@ -9,6 +9,14 @@ const Form = () => {
         confirmPassword: ''
     })
 
+    // const [testUser, setTestUser] = userState({
+    //     firstName: '',
+    //     lastName: '',
+    //     email: '',
+    //     password: '',
+    //     confirmPassword: ''
+    // })
+
     const [allUsers, setAllUsers] = useState([]);
 
     const changeHandler = (e) => {
@@ -62,6 +70,13 @@ const Form = () => {
                     {/* <button className="btn btn-secondary m-3" onClick={() => alert("This button has been clicked!")}>Submit</button> */}
                     <button className="btn btn-secondary m-3">Submit</button>
                 </form>
+            </div>
+            <div className="row mx-auto mt-3 bg-primary col-4 rounded-3">
+                    <h3>First Name: {user.firstName}</h3>
+                    <h3>Last Name: {user.lastName}</h3>
+                    <h3>Email: {user.email}</h3>
+                    <h3>Password: {user.password}</h3>
+                    <h3>Confirm Password: {user.confirmPassword}</h3>
             </div>
 
 
